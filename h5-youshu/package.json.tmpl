@@ -58,12 +58,13 @@
   "devDependencies": {
     "@babel/core": "^7.8.0",
     "@tarojs/cli": "<%= version %>",
-    "@types/webpack-env": "^1.13.6",
-    "postcss": "^8.4.18",<% if (['react', 'preact'].includes(framework)) {%>
+    "@types/webpack-env": "^1.13.6",<% if (['react', 'preact'].includes(framework)) {%>
     "@types/react": "^18.0.0",<%}%><% if (compiler === 'webpack4') {%>
+    "postcss": "^7.0.35",
     "@tarojs/mini-runner": "<%= version %>",
     "@tarojs/webpack-runner": "<%= version %>",
     "webpack": "4.46.0",<%} else if (compiler === 'webpack5') {%>
+    "postcss": "^8.4.18",
     "webpack": "5.69.0",
     "@tarojs/webpack5-runner": "<%= version %>",<%}%>
     "babel-preset-taro": "<%= version %>",<% if (['vue', 'vue3'].includes(framework)) {%>

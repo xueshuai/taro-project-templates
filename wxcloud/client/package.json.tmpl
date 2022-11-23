@@ -58,9 +58,11 @@
   "devDependencies": {
     "@babel/core": "^7.8.0",
     "@tarojs/cli": "<%= version %>",<% if (compiler === 'webpack4') {%>
+    "postcss": "^7.0.35",
     "@tarojs/mini-runner": "<%= version %>",
     "@tarojs/webpack-runner": "<%= version %>",
     "webpack": "4.46.0",<%} else if (compiler === 'webpack5') {%>
+    "postcss": "^8.4.18",
     "webpack": "5.69.0",
     "@tarojs/webpack5-runner": "<%= version %>",<%}%>
     "@types/webpack-env": "^1.13.6",
@@ -88,7 +90,6 @@
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "typescript": "^3.7.0",<%}%>
     "eslint-config-taro": "<%= version %>",
-    "stylelint": "9.3.0",
-    "postcss": "^8.4.18"
+    "stylelint": "9.3.0"
   }
 }
